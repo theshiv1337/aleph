@@ -25,7 +25,7 @@ First if you don't have an [Elasticsearch](http://www.elasticsearch.org) instanc
 
 For Debian/Ubuntu/Redhat/Fedora/CentOS (yum + apt basically) users, follow [this guide](http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-repositories.html).
 
-** Remember: Elasticsearh uses JVM, so you also must install it =) **
+** Remember: Elasticsearh uses JVM (8+), so you also must install it =) **
 
 #### Python modules
 We strongly suggest that you use python's virtual environment so you don't pollute the rest of your OS installation with python modules. To make a contained virtual environment, install _virtualenv_ with _pip_:
