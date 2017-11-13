@@ -14,7 +14,7 @@ Flask==0.10.1
 itsdangerous==0.24
 Jinja2==2.7.3
 MarkupSafe==0.23
-pefile==5.0.0
+pefile==2017.8.1
 pluginbase==0.3
 pycparser==2.10
 pygeoip==0.3.1
