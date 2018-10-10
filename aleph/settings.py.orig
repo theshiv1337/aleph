@@ -1,22 +1,22 @@
 DEBUG = True
 
 SAMPLE_SOURCES = [
-    #('local', {'path': '/opt/aleph/unprocessed_samples'}),
+    ('local', {'path': '/var/www/html/unprocessed_samples'}),
     #('mail', {'host': 'imap.exampl.com', 'username': 'youruser@example.com', 'password': 'yourpassword', 'root_folder': 'Inbox' })
 ]
 
 PLUGIN_SETTINGS = {
-    #'virustotal': { 'enabled': True, 'api_key': '', 'api_limit': '7' }
+    'virustotal': { 'enabled': True, 'api_key': '', 'api_limit': '10' }
 }
 
 ELASTICSEARCH_URI = '127.0.0.1:9200'
 ELASTICSEARCH_INDEX = 'samples'
-ELASTICSEARCH_TRACE = False
+ELASTICSEARCH_TRACE = True
 
-SAMPLE_TEMP_DIR = '/opt/aleph/temp'
-SAMPLE_STORAGE_DIR = '/opt/aleph/samples'
+SAMPLE_TEMP_DIR = '/var/www/html/temp'
+SAMPLE_STORAGE_DIR = '/var/www/html/samples'
 
-SAMPLE_MANAGERS=2 # Simultaneous sample analysis
+SAMPLE_MANAGERS=5 # Simultaneous sample analysis
 
 SAMPLE_MIN_FILESIZE=40 # bytes
 SAMPLE_MAX_FILESIZE=(1024*1024*30) # bytes
@@ -38,7 +38,9 @@ del os
 SERVER_NAME = 'localhost:5000'
 PREFERRED_URL_SCHEME = 'http'
 ALLOW_REGISTRATIONS = True
-SAMPLE_SUBMIT_FOLDER = None
+SAMPLE_SUBMIT_FOLDER = '/var/www/html/unprocessed_samples'
+SAMPLE_TEMP_DIR = '/var/www/html/temp'
+SAMPLE_STORAGE_DIR = '/var/www/html/samples'
 
 LOGGING  = {
 	'directory': 'log/',
