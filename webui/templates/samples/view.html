@@ -81,7 +81,7 @@
 {{ _('This sample has no tags.') }}
 {% else %}
 {% for tag in sample.tags %}
-<a href="{{ url_for('samples.index') }}?search=tags:{{ tag }}"><button class="btn-sm btn btn-default"><i class="fa fa-tag"></i> {{ tag }}</button></a>
+<a href="{{ url_for('samples.index') }}?_search=tags:{{ tag }}"><button class="btn-sm btn btn-default"><i class="fa fa-tag"></i> {{ tag }}</button></a>
 {% endfor %}
 {% endif %}
         </dl>
@@ -164,7 +164,7 @@
         {% for item in item_value %}
         <tr>
         {% for k,v in item.iteritems() %}
-        <td><a href="{{ url_for('samples.index') }}?search=data.{{ plugin_name }}.{{ item_name|lower }}.{{ k|lower }}:{{ v }}" title="{{ _('Search all samples for \'%(keyname)s\' with value \'%(valuename)s\'', keyname=plugin_name+'.'+item_name|lower+'.'+k|lower, valuename = v) }}">{{ v }}</a></td>
+        <td><a href="{{ url_for('samples.index') }}?_search=data.{{ plugin_name }}.{{ item_name|lower }}.{{ k|lower }}:{{ v }}" title="{{ _('Search all samples for \'%(keyname)s\' with value \'%(valuename)s\'', keyname=plugin_name+'.'+item_name|lower+'.'+k|lower, valuename = v) }}">{{ v }}</a></td>
         {% endfor %}
         </tr>
         {% endfor %}
@@ -203,12 +203,12 @@
 {% else %}
 <ul>
         {% for item in item_value %}
-        <li><a href="{{ url_for('samples.index') }}?search=data.{{ plugin_name }}.{{ item_name|lower }}:{{ item }}" title="{{ _('Search all samples for \'%(keyname)s\' with value \'%(valuename)s\'', keyname=plugin_name+'.'+item_name|lower, valuename = item) }}">{{ item }}</a></li>
+        <li><a href="{{ url_for('samples.index') }}?_search=data.{{ plugin_name }}.{{ item_name|lower }}:{{ item }}" title="{{ _('Search all samples for \'%(keyname)s\' with value \'%(valuename)s\'', keyname=plugin_name+'.'+item_name|lower, valuename = item) }}">{{ item }}</a></li>
         {% endfor %}
         </ul>
 {% endif %}
 {% else %}
-<a href="{{ url_for('samples.index') }}?search=data.{{ plugin_name }}.{{ item_name|lower }}:{{ item_value }}" title="{{ _('Search all samples for \'%(keyname)s\' with value \'%(valuename)s\'', keyname=plugin_name+'.'+item_name|lower, valuename = item_value) }}">{{ item_value }}</a>
+<a href="{{ url_for('samples.index') }}?_search=data.{{ plugin_name }}.{{ item_name|lower }}:{{ item_value }}" title="{{ _('Search all samples for \'%(keyname)s\' with value \'%(valuename)s\'', keyname=plugin_name+'.'+item_name|lower, valuename = item_value) }}">{{ item_value }}</a>
 {% endif %}
 </dd>
         {% endfor %}
