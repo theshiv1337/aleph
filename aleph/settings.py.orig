@@ -41,6 +41,7 @@ ALLOW_REGISTRATIONS = True
 SAMPLE_SUBMIT_FOLDER = '/var/www/html/unprocessed_samples'
 SAMPLE_TEMP_DIR = '/var/www/html/temp'
 SAMPLE_STORAGE_DIR = '/var/www/html/samples'
+SECRET_KEY = 'Pu7s0m3cryp7l337here'
 
 LOGGING  = {
 	'directory': 'log/',
