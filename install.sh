@@ -4,7 +4,7 @@ echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a
 echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/java-8-debian.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
 apt-get update
-apt-get install -y python-pyrex libffi-dev libfuzhttps://github.com/chrishantha/install-javazy-dev python-dateutil libsqlite3-dev python-pip git software-properties-common
+apt-get install -y python-pyrex libffi-dev libfuzzy-dev python-dateutil libsqlite3-dev python-pip git software-properties-common
 git clone https://github.com/chrishantha/install-java.git
 apt-get install openjdk-8-jdk-headless -y --force-yes
 add-apt-repository -y ppa:webupd8team/java
