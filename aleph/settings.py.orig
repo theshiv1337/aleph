@@ -13,9 +13,6 @@ ELASTICSEARCH_URI = '127.0.0.1:9200'
 ELASTICSEARCH_INDEX = 'samples'
 ELASTICSEARCH_TRACE = True
 
-SAMPLE_TEMP_DIR = '/var/www/html/temp'
-SAMPLE_STORAGE_DIR = '/var/www/html/samples'
-
 SAMPLE_MANAGERS=5 # Simultaneous sample analysis
 
 SAMPLE_MIN_FILESIZE=40 # bytes
