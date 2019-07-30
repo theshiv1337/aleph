@@ -1,5 +1,8 @@
 #!/bin/bash
- 
+
+echo ""
+echo " [ Updating ] "
+echo ""
 apt-get update
 echo ""
 echo " [ Installing a bunch of shit ] "
