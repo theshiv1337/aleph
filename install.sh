@@ -1,6 +1,7 @@
 #!/bin/bash
  
 apt-get update
+echo " [ Installing a bunch of shit ] "
 apt-get install -y python-pyrex libffi-dev libfuzzy-dev python-dateutil libsqlite3-dev python-pip git apt-transport-https software-properties-common default-jre python-pip
 git clone https://github.com/chrishantha/install-java.git
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add -
