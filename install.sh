@@ -18,4 +18,4 @@ cp /opt/aleph/aleph/settings.py.orig /opt/aleph/aleph/settings.py
 echo ""
 echo " [ Installing Pip Packages ] "
 echo ""
-pip install -r requirements
+pip install -r requirements.txt
