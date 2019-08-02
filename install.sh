@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Need to update/pull tar.gz and install using these instructions (default-jdk does not work)
+# https://www.cyberciti.biz/faq/howto-installing-oracle-java7-on-ubuntu-linux/
+# https://www.oracle.com/technetwork/java/javase/downloads/jdk12-downloads-5295953.html
+
 echo ""
 echo " [ Updating ] "
 echo ""
