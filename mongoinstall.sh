@@ -7,7 +7,7 @@ apt-get update
 echo ""
 echo " [ Installing a bunch of shit ] "
 echo ""
-apt-get -q install -y python-pyrex libffi-dev libfuzzy-dev python-dateutil libsqlite3-dev python-pip git apt-transport-https software-properties-common python-pip
+apt-get -q install -y python-pyrex libffi-dev libfuzzy-dev python-dateutil libsqlite3-dev apt-transport-https software-properties-common python-pip
 echo ""
 echo " [ Configuring Aleph ] "
 echo ""
